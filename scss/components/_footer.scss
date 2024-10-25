@@ -1,0 +1,34 @@
+//Footer
+footer {
+    grid-area: footer;
+}
+
+.contenedor-footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #B8001F;
+    text-align: justify;
+    padding: 20px;
+
+    .rrss, .social-icons, .contacto {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+
+    .rrss li, .social-icons img, .contacto h3, .contacto a {
+        color: #FCFAEE;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .social-icons img {
+        width: 21px;
+        margin-right: 10px;
+    }
+
+    .contacto {
+        grid-column: 1;
+        line-height: 0.5;
+        font-family: 'Arial', sans-serif;
+    }
+}

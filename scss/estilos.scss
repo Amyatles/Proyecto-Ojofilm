@@ -1,0 +1,24 @@
+@import"./base/sass";
+@import"./base/generales";
+@import"./components/header";
+@import"./components/main";
+@import"./components/footer";
+@import"./base/queries";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//body
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #ffffff;
+}

@@ -1,0 +1,233 @@
+main {
+    grid-area: main;
+    min-height: 100%;
+}
+
+//index
+.carousel-item {
+    display: flex;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        height: 300px;
+        margin-right: 15px;
+    }
+}
+
+//somos
+.ojofilm {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FCFAEE;
+    font-size: 5rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.equipo {
+    height: 330px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: grayscale(80%) blur(2px);
+    }
+}
+
+.seccion-texto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+
+    p {
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+}
+
+.texto-directora {
+    margin-bottom: 50px;
+
+    div {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        img {
+            width: 250px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        p {
+            max-width: 900px;
+            text-align: justify;
+            margin: 0;
+            line-height: 1.6;
+            transform: translate(2%, 50%);
+        }
+    }
+}
+
+//festivales
+.festivales, .dospeliculas, .trespeliculas {
+    width: 100%;
+    display: grid;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.dospeliculas, .container-cined, .container-cinef {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.trespeliculas {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dosmovie, .tresmovie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//contacto
+.rodaje {
+    height: 330px;
+    width: 100%;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: opacity(50%);
+    }
+}
+
+.formulario-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+    div {
+        grid-column: 2/4;
+        margin-bottom: 20px;
+
+        h2 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FCFAEE;
+            font-size: 5rem;
+            z-index: 1;
+            text-align: center;
+        }
+    }
+}
+
+.nombre, .email, .asunto, .mensaje {
+    input {
+        width: 559px;
+    }
+
+    .mensaje {
+        height: 184px;
+    }
+}
+
+.buttonsend {
+    input {
+        width: 80px;
+        height: 28px;
+    }
+}
+
+//producciones
+h2 {
+    margin: 24px;
+}
+
+.Imagenppal {
+    grid-column: 1 / 5;
+    height: 490px;
+
+    div {
+        height: 450px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    p {
+        position: relative;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        text-align: justify;
+        margin-top: 10px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}
+
+.divlinaje, .divnewen, .divpueblo, .divisabel {
+    width: 613px;
+    height: 388px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+    }
+
+    p {
+        position: relative;
+        font-size: 0.85rem;
+        line-height: 1.6;
+        text-align: justify;
+    }
+}
+
+
+//premios
+.container-premios {
+    margin-bottom: 15px;
+    height: 80px;
+}
+
+.premios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+
+    img {
+        width: 130px;
+        object-fit: cover;
+    }
+}

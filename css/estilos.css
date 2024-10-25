@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+.logo, .navbar-brand {
+  width: 123px;
+  height: auto;
+}
+.logo img, .navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  grid-area: header;
+}
+
+.h1 {
+  text-decoration: none;
+  align-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(171, 203, 243, 0.1098039216);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #030200;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  background-color: #507687;
+}
+
+.Imagen1 {
+  grid-column: 1/5;
+  height: 400px;
+}
+.Imagen1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main {
+  grid-area: main;
+  min-height: 100%;
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 300px;
+  margin-right: 15px;
+}
+
+.container-premios {
+  margin-bottom: 15px;
+  height: 80px;
+}
+
+.premios {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+}
+.premios img {
+  width: 130px;
+  object-fit: cover;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #B8001F;
+  text-align: justify;
+  padding: 20px;
+}
+.contenedor-footer .rrss, .contenedor-footer .social-icons, .contenedor-footer .contacto {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.contenedor-footer .rrss li, .contenedor-footer .social-icons img, .contenedor-footer .contacto h3, .contenedor-footer .contacto a {
+  color: #FCFAEE;
+  list-style-type: none;
+  text-decoration: none;
+}
+.contenedor-footer .social-icons img {
+  width: 21px;
+  margin-right: 10px;
+}
+.contenedor-footer .contacto {
+  grid-column: 1;
+  line-height: 0.5;
+  font-family: "Arial", sans-serif;
+}
+
+.ojofilm {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FCFAEE;
+  font-size: 5rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.equipo {
+  height: 330px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.equipo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(80%) blur(2px);
+}
+
+.seccion-texto {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.8;
+  font-family: "Arial", sans-serif;
+}
+.seccion-texto p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.texto-directora {
+  margin-bottom: 50px;
+}
+.texto-directora div {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.texto-directora div img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.texto-directora div p {
+  max-width: 900px;
+  text-align: justify;
+  margin: 0;
+  line-height: 1.6;
+  transform: translate(2%, 50%);
+}
+
+.festivales, .dospeliculas, .trespeliculas {
+  width: 100%;
+  display: grid;
+}
+.festivales img, .dospeliculas img, .trespeliculas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dospeliculas, .container-cined, .container-cinef {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.trespeliculas {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dosmovie, .tresmovie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodaje {
+  height: 330px;
+  width: 100%;
+}
+.rodaje img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: opacity(50%);
+}
+
+.formulario-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px 0;
+}
+.formulario-section div {
+  grid-column: 2/4;
+  margin-bottom: 20px;
+}
+.formulario-section div h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FCFAEE;
+  font-size: 5rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.nombre input, .email input, .asunto input, .mensaje input {
+  width: 559px;
+}
+.nombre .mensaje, .email .mensaje, .asunto .mensaje, .mensaje .mensaje {
+  height: 184px;
+}
+
+.buttonsend input {
+  width: 80px;
+  height: 28px;
+}
+
+h2 {
+  margin: 24px;
+}
+
+.Imagenppal {
+  grid-column: 1/5;
+  height: 490px;
+}
+.Imagenppal div {
+  height: 450px;
+}
+.Imagenppal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Imagenppal p {
+  position: relative;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 10px 24px;
+}
+
+.divlinaje, .divnewen, .divpueblo, .divisabel {
+  width: 613px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divlinaje img, .divnewen img, .divpueblo img, .divisabel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.divlinaje p, .divnewen p, .divpueblo p, .divisabel p {
+  position: relative;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/*# sourceMappingURL=estilos.css.map */
