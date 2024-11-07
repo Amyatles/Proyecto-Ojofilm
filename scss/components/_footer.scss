@@ -10,9 +10,15 @@ footer {
     text-align: justify;
     padding: 20px;
 
-    .rrss, .social-icons, .contacto {
+    .rrss, .contacto {
         margin-top: 10px;
         font-size: 0.8rem;
+
+    }
+    .social-icons{
+        display: grid;
+        grid-column: 4;
+        
     }
 
     .rrss li, .social-icons img, .contacto h3, .contacto a {

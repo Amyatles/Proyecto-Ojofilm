@@ -83,7 +83,9 @@ main {
 }
 
 //festivales
-.festivales, .dospeliculas, .trespeliculas {
+.festivales,
+.dospeliculas,
+.trespeliculas {
     width: 100%;
     display: grid;
 
@@ -94,7 +96,7 @@ main {
     }
 }
 
-.dospeliculas, .container-cined, .container-cinef {
+.dospeliculas {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -102,7 +104,8 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.dosmovie, .tresmovie {
+.dosmovie,
+.tresmovie {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +147,10 @@ main {
     }
 }
 
-.nombre, .email, .asunto, .mensaje {
+.nombre,
+.email,
+.asunto,
+.mensaje {
     input {
         width: 559px;
     }
@@ -188,15 +194,36 @@ h2 {
         margin-top: 10px;
         margin-left: 24px;
         margin-right: 24px;
+        margin-bottom: 20px;
     }
 }
 
-.divlinaje, .divnewen, .divpueblo, .divisabel {
+.container-cined{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 480px;
+}
+.container-cinef {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    height: 470px;
+}
+.container-tv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    
+    height: 490px;
+
+}
+
+.divlinaje,
+.divnewen,
+.divpueblo,
+.divisabel {
     width: 613px;
     height: 388px;
-    display: flex;
+   /**display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center**/
 
     img {
         width: 100%;
@@ -208,7 +235,7 @@ h2 {
     p {
         position: relative;
         font-size: 0.85rem;
-        line-height: 1.6;
+        line-height: 1.60;
         text-align: justify;
     }
 }

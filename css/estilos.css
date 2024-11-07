@@ -1,22 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: grid;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  background-color: #ffffff;
-}
-
-.logo, .navbar-brand {
+.logo {
   width: 123px;
   height: auto;
 }
-.logo img, .navbar-brand img {
+.logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -29,6 +15,16 @@ header {
 .h1 {
   text-decoration: none;
   align-content: center;
+}
+
+.navbar-brand {
+  width: 70px;
+  height: 90px;
+}
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .navbar-container {
@@ -96,34 +92,19 @@ main {
   object-fit: cover;
 }
 
-footer {
-  grid-area: footer;
+main {
+  grid-area: main;
+  min-height: 100%;
 }
 
-.contenedor-footer {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  background-color: #B8001F;
-  text-align: justify;
-  padding: 20px;
+.carousel-item {
+  display: flex;
+  align-items: center;
 }
-.contenedor-footer .rrss, .contenedor-footer .social-icons, .contenedor-footer .contacto {
-  margin-top: 10px;
-  font-size: 0.8rem;
-}
-.contenedor-footer .rrss li, .contenedor-footer .social-icons img, .contenedor-footer .contacto h3, .contenedor-footer .contacto a {
-  color: #FCFAEE;
-  list-style-type: none;
-  text-decoration: none;
-}
-.contenedor-footer .social-icons img {
-  width: 21px;
-  margin-right: 10px;
-}
-.contenedor-footer .contacto {
-  grid-column: 1;
-  line-height: 0.5;
-  font-family: "Arial", sans-serif;
+.carousel-item img {
+  object-fit: cover;
+  height: 300px;
+  margin-right: 15px;
 }
 
 .ojofilm {
@@ -187,17 +168,21 @@ footer {
   transform: translate(2%, 50%);
 }
 
-.festivales, .dospeliculas, .trespeliculas {
+.festivales,
+.dospeliculas,
+.trespeliculas {
   width: 100%;
   display: grid;
 }
-.festivales img, .dospeliculas img, .trespeliculas img {
+.festivales img,
+.dospeliculas img,
+.trespeliculas img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.dospeliculas, .container-cined, .container-cinef {
+.dospeliculas {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -205,7 +190,8 @@ footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.dosmovie, .tresmovie {
+.dosmovie,
+.tresmovie {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +211,8 @@ footer {
 .formulario-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 20px 0;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .formulario-section div {
   grid-column: 2/4;
@@ -242,10 +229,16 @@ footer {
   text-align: center;
 }
 
-.nombre input, .email input, .asunto input, .mensaje input {
+.nombre input,
+.email input,
+.asunto input,
+.mensaje input {
   width: 559px;
 }
-.nombre .mensaje, .email .mensaje, .asunto .mensaje, .mensaje .mensaje {
+.nombre .mensaje,
+.email .mensaje,
+.asunto .mensaje,
+.mensaje .mensaje {
   height: 184px;
 }
 
@@ -275,27 +268,168 @@ h2 {
   font-size: 0.85rem;
   line-height: 1.6;
   text-align: justify;
-  margin: 10px 24px;
+  margin-top: 10px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 
-.divlinaje, .divnewen, .divpueblo, .divisabel {
+.container-cined {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 480px;
+}
+
+.container-cinef {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 470px;
+}
+
+.container-tv {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 490px;
+}
+
+.divlinaje,
+.divnewen,
+.divpueblo,
+.divisabel {
   width: 613px;
   height: 388px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /**display: flex;
+   flex-direction: column;
+   align-items: center**/
 }
-.divlinaje img, .divnewen img, .divpueblo img, .divisabel img {
+.divlinaje img,
+.divnewen img,
+.divpueblo img,
+.divisabel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin-bottom: 16px;
 }
-.divlinaje p, .divnewen p, .divpueblo p, .divisabel p {
+.divlinaje p,
+.divnewen p,
+.divpueblo p,
+.divisabel p {
   position: relative;
   font-size: 0.85rem;
   line-height: 1.6;
   text-align: justify;
+}
+
+.container-premios {
+  margin-bottom: 15px;
+  height: 80px;
+}
+
+.premios {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+}
+.premios img {
+  width: 130px;
+  object-fit: cover;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #B8001F;
+  text-align: justify;
+  padding: 20px;
+}
+.contenedor-footer .rrss, .contenedor-footer .contacto {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+.contenedor-footer .social-icons {
+  display: grid;
+  grid-column: 4;
+}
+.contenedor-footer .rrss li, .contenedor-footer .social-icons img, .contenedor-footer .contacto h3, .contenedor-footer .contacto a {
+  color: #FCFAEE;
+  list-style-type: none;
+  text-decoration: none;
+}
+.contenedor-footer .social-icons img {
+  width: 21px;
+  margin-right: 10px;
+}
+.contenedor-footer .contacto {
+  grid-column: 1;
+  line-height: 0.5;
+  font-family: "Arial", sans-serif;
+}
+
+/**movil**/
+@media (max-width: 600px) {
+  .navbar-brand img {
+    width: 25px;
+    height: 20px;
+  }
+  .carousel-inner .col-md-3 {
+    width: 100%;
+    padding: 5px;
+  }
+  .container-premios .premios img {
+    width: 50px;
+    margin: 0 auto;
+  }
+  .contenedor-footer {
+    display: block;
+    text-align: center;
+  }
+  .rrss li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
+/**tablets**/
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar-brand img {
+    width: 30px;
+    height: 24px;
+  }
+  .carousel-inner .col-md-3 {
+    width: 50%;
+    padding: 10px;
+  }
+  .container-premios .premios img {
+    width: 80px;
+    margin: 10px;
+  }
+  .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rrss {
+    display: flex;
+    gap: 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=estilos.css.map */
