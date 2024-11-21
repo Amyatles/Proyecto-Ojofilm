@@ -9,8 +9,12 @@ footer {
     background-color: #B8001F;
     text-align: justify;
     padding: 20px;
-
-    .rrss, .contacto {
+    .contacto{
+        margin-top: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .rrss {
         margin-top: 10px;
         font-size: 0.8rem;
 
@@ -20,6 +24,8 @@ footer {
         grid-column: 4;
         
     }
+
+    
 
     .rrss li, .social-icons img, .contacto h3, .contacto a {
         color: #FCFAEE;

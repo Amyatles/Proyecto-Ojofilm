@@ -4,6 +4,8 @@ main {
 }
 
 //index
+
+
 .carousel-item {
     display: flex;
     align-items: center;
@@ -83,11 +85,28 @@ main {
 }
 
 //festivales
-.festivales,
-.dospeliculas,
-.trespeliculas {
+.contenedor-festivales{
+    height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.festivales{    
+        width: 100%;
+        height: 500px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
+.dospeliculas{
     width: 100%;
+    height: 500px;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     img {
         width: 100%;
@@ -96,21 +115,17 @@ main {
     }
 }
 
-.dospeliculas {
-    grid-template-columns: repeat(2, 1fr);
-}
+.pelicula{
+    height: 400px ;
+    width: 700px;
+    
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
 
-.trespeliculas {
-    grid-template-columns: repeat(3, 1fr);
+    }
 }
-
-.dosmovie,
-.tresmovie {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 //contacto
 .rodaje {
     height: 330px;
@@ -127,11 +142,12 @@ main {
 .formulario-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 2/5;
     margin-bottom: 20px;
     margin-top: 20px;
 
     div {
-        grid-column: 2/4;
+        
         margin-bottom: 20px;
 
         h2 {
@@ -173,8 +189,15 @@ h2 {
 }
 
 .Imagenppal {
+    display: grid;
     grid-column: 1 / 5;
-    height: 490px;
+    height: 580px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.278);
+    padding-bottom: 200px;
+    overflow: hidden;
 
     div {
         height: 450px;
@@ -200,18 +223,23 @@ h2 {
 
 .container-cined{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
-    height: 480px;
+    gap: 20px;
+    height: 600px;
 }
 .container-cinef {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);    
-    height: 470px;
+    height: 600px;
 }
 .container-tv{
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);    
-    height: 490px;
+    height: 600px;
+    margin-bottom: 80px;
 
 }
 
@@ -219,12 +247,19 @@ h2 {
 .divnewen,
 .divpueblo,
 .divisabel {
-    width: 613px;
-    height: 388px;
-   /**display: flex;
-    flex-direction: column;
-    align-items: center**/
-
+    width: 552px;
+    height: auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.618);
+    padding: 20px;
+    padding-bottom: 160px;
+    overflow: hidden;
+   
     img {
         width: 100%;
         height: 100%;
@@ -238,23 +273,33 @@ h2 {
         line-height: 1.60;
         text-align: justify;
     }
+    
+}
+.btn{
+    width: 200px;
+
 }
 
 
 //premios
 .container-premios {
-    margin-bottom: 15px;
-    height: 80px;
+    display:flex;
+    gap: 20px;
+    height: 250px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .premios {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    height: auto;
+    
+    height: 150px;
+    width: auto;
+    margin-top: 60px;
+    
 
     img {
-        width: 130px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
     }
 }
